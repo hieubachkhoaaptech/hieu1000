@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
+    <property name="hibernate.connection.url">jdbc:sqlserver://localhost:1433;databaseName=Shoess</property>
+    <property name="hibernate.connection.username">sa</property>
+    <property name="hibernate.connection.password">123456</property>
+    <property name="hibernate.current_session_context_class">thread</property>
+    <property name="hibernate.show_sql">true</property>
+    <mapping class="entities.Admin"/>
+    <mapping class="entities.Catelog"/>
+    <mapping class="entities.Color"/>
+    <mapping class="entities.Customer"/>
+    <mapping class="entities.OrderDetail"/>
+    <mapping class="entities.Orders"/>
+    <mapping class="entities.Payment"/>
+    <mapping class="entities.Product"/>
+    <mapping class="entities.Provider"/>
+    <mapping class="entities.Size1"/>
+  </session-factory>
+</hibernate-configuration>
